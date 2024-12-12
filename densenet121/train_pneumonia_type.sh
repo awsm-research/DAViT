@@ -1,0 +1,16 @@
+python main.py \
+    --classify_pneumonia_type \
+    --model_name=densenet121_pneumonia_type.bin \
+    --output_dir=./saved_models \
+    --do_train \
+    --do_test \
+    --train_data_file=../data/chest_xray/train \
+    --eval_data_file=../data/chest_xray/val \
+    --test_data_file=../data/chest_xray/test \
+    --epochs 100 \
+    --train_batch_size 128 \
+    --eval_batch_size 128 \
+    --learning_rate 1e-3 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training \
+    --seed 123456  2>&1 | tee densenet121_pneumonia_type.log

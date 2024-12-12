@@ -1,0 +1,16 @@
+python main.py \
+    --model_name_or_path=facebook/dinov2-large \
+    --model_name=30epo_1e5_dinov2-large.bin \
+    --output_dir=./saved_models \
+    --do_train \
+    --do_test \
+    --train_data_file=../data/chest_xray/train \
+    --eval_data_file=../data/chest_xray/val \
+    --test_data_file=../data/chest_xray/test \
+    --epochs 30 \
+    --train_batch_size 32 \
+    --eval_batch_size 32 \
+    --learning_rate 1e-5 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training \
+    --seed 123456  2>&1 | tee 30epo_1e5_train_dinov2-large.log

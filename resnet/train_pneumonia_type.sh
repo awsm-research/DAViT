@@ -1,0 +1,71 @@
+python main.py \
+    --classify_pneumonia_type \
+    --model_name_or_path=resnet50 \
+    --model_name=resnet50_pneumonia_type.bin \
+    --output_dir=./saved_models \
+    --do_train \
+    --do_test \
+    --train_data_file=../data/chest_xray/train \
+    --eval_data_file=../data/chest_xray/val \
+    --test_data_file=../data/chest_xray/test \
+    --epochs 100 \
+    --train_batch_size 128 \
+    --eval_batch_size 128 \
+    --learning_rate 1e-3 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training \
+    --seed 123456  2>&1 | tee resnet50_pneumonia_type.log
+
+python main.py \
+    --classify_pneumonia_type \
+    --model_name_or_path=resnet152 \
+    --model_name=resnet152_pneumonia_type.bin \
+    --output_dir=./saved_models \
+    --do_train \
+    --do_test \
+    --train_data_file=../data/chest_xray/train \
+    --eval_data_file=../data/chest_xray/val \
+    --test_data_file=../data/chest_xray/test \
+    --epochs 100 \
+    --train_batch_size 128 \
+    --eval_batch_size 128 \
+    --learning_rate 1e-3 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training \
+    --seed 123456  2>&1 | tee resnet152_pneumonia_type.log
+
+python main.py \
+    --classify_pneumonia_type \
+    --model_name_or_path=resnext101 \
+    --model_name=resnext101_pneumonia_type.bin \
+    --output_dir=./saved_models \
+    --do_train \
+    --do_test \
+    --train_data_file=../data/chest_xray/train \
+    --eval_data_file=../data/chest_xray/val \
+    --test_data_file=../data/chest_xray/test \
+    --epochs 100 \
+    --train_batch_size 128 \
+    --eval_batch_size 128 \
+    --learning_rate 1e-3 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training \
+    --seed 123456  2>&1 | tee resnext101_pneumonia_type.log
+
+python main.py \
+    --classify_pneumonia_type \
+    --model_name_or_path=wide_resnet101 \
+    --model_name=wide_resnet101_pneumonia_type.bin \
+    --output_dir=./saved_models \
+    --do_train \
+    --do_test \
+    --train_data_file=../data/chest_xray/train \
+    --eval_data_file=../data/chest_xray/val \
+    --test_data_file=../data/chest_xray/test \
+    --epochs 100 \
+    --train_batch_size 128 \
+    --eval_batch_size 128 \
+    --learning_rate 1e-3 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training \
+    --seed 123456  2>&1 | tee wide_resnet101_pneumonia_type.log

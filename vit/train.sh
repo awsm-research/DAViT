@@ -1,0 +1,16 @@
+python main.py \
+    --model_name_or_path=google/vit-base-patch16-224 \
+    --model_name=50epo_5e5_vit-base-patch16-224.bin \
+    --output_dir=./saved_models \
+    --do_train \
+    --do_test \
+    --train_data_file=../data/chest_xray/train \
+    --eval_data_file=../data/chest_xray/val \
+    --test_data_file=../data/chest_xray/test \
+    --epochs 50 \
+    --train_batch_size 128 \
+    --eval_batch_size 128 \
+    --learning_rate 5e-5 \
+    --max_grad_norm 1.0 \
+    --evaluate_during_training \
+    --seed 123456  2>&1 | tee 50epo_5e5_train_vit-base-patch16-224.log
