@@ -1,5 +1,5 @@
 <div align="center">
-<img src="img/cover_1.png">
+<img src="img/overview.png">
   
 # <br> DAViT: A domain-adapted vision transformer for automated pneumonia detection and explanation using chest X-ray images <br> (Replication Package)
 
