@@ -1,10 +1,8 @@
 <div align="center">
-<img src="img/overview.png">
   
 # <br> DAViT: A domain-adapted vision transformer for automated pneumonia detection and explanation using chest X-ray images <br> (Replication Package)
 
 </div>
-
 
 <p align="center">
   <img src="img/logo.png" width="200" height="200">
@@ -14,9 +12,12 @@
     Detecting and explaining pneumonia types using chest X-ray images
   </p>
 </p>
-     
-## Table of contents
 
+<div align="center">
+<img src="img/overview.png">
+</div>
+
+## Table of contents
 <!-- Table of contents -->
 <details open="open">
   <summary></summary>
