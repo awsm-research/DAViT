@@ -8,7 +8,7 @@ import torch
 from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler
 from transformers import get_constant_schedule, AutoImageProcessor, AutoModel, get_linear_schedule_with_warmup
 from tqdm import tqdm
-from model_vit_cnn import Model
+from model_davit import Model
 from sklearn.metrics import f1_score, roc_auc_score, accuracy_score, precision_score, recall_score, confusion_matrix
 from PIL import Image
 from torchvision import transforms
@@ -389,7 +389,7 @@ def main():
     
     # use pretrained model
     # Load the state_dict from a file (replace 'model_weights.pth' with your file path)
-    state_dict = torch.load("./saved_models/checkpoint-best-f1/chest_pretrained_dinov2-large-cnn.bin", map_location=args.device)
+    state_dict = torch.load("./saved_models/checkpoint-best-f1/domain_adapted_davit.bin", map_location=args.device)
     
     model_state_dict = model.state_dict()
     # Initialize a new state_dict to store filtered parameters

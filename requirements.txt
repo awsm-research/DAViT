@@ -1,0 +1,7 @@
+numpy>=1.21.0
+torch>=1.11.0  # Version depends on your specific requirements and GPU/CUDA compatibility
+torchvision>=0.12.0
+transformers>=4.30.0
+tqdm>=4.65.0
+Pillow>=9.0.0  # PIL library
+scikit-learn>=1.0.0

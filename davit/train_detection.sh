@@ -1,7 +1,6 @@
 python main.py \
-    --classify_pneumonia_type \
     --model_name_or_path=facebook/dinov2-large \
-    --model_name=pre_30epo_1e5_dinov2-large-cnn_pneumonia_type.bin \
+    --model_name=davit_pneumonia_detection.bin \
     --output_dir=./saved_models \
     --do_train \
     --do_test \
@@ -14,4 +13,4 @@ python main.py \
     --learning_rate 1e-5 \
     --max_grad_norm 1.0 \
     --evaluate_during_training \
-    --seed 123456  2>&1 | tee pre_30epo_1e5_train_dinov2-large-cnn_pneumonia_type.log
+    --seed 123456  2>&1 | tee davit_pneumonia_detection.log
