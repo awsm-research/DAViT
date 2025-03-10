@@ -135,5 +135,5 @@ pip install -r requirements.txt
  
 ## Citation
 ```bash
-under review at PLOS ONE
+under review at IEEE Access
 ```
