@@ -135,5 +135,11 @@ pip install -r requirements.txt
  
 ## Citation
 ```bash
-under review at IEEE Access
+@article{fu2025davit,
+  title={DAViT: A domain-adapted vision transformer for automated pneumonia detection and explanation using chest X-ray images},
+  author={Fu, Michael and Tantithamthavorn, Chakkrit and Le, Trung},
+  journal={IEEE Access},
+  year={2025},
+  publisher={IEEE}
+}
 ```
